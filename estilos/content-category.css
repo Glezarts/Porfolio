@@ -1,0 +1,25 @@
+
+.content-page-works{
+    background-color: black;
+    display: block;
+}
+.content-page-works .category{
+    width: 100%;
+    padding: 200px auto;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.content-page-works .category:hover {
+    font-weight: 900;
+}
+.content-page-works .category a{
+    text-decoration: none;
+    color: white;
+    font-size: 5em;
+    width: 500px;
+}
+.content-page-works .category a:hover{
+    color: #cb9560; 
+
+}

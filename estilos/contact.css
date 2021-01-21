@@ -1,0 +1,160 @@
+.contact-{
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 300px;
+    padding-bottom: 100px;
+}
+
+ h1{
+    color:white;
+    margin-left: -30px;
+}
+.Words-line {
+    height: 90px;
+    overflow: hidden;
+    position: relative;
+  }
+.Words {
+    margin-left: 150px;
+    color: darkgrey;
+    margin: 0 auto;
+    padding: 0;
+    font-size:45px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+.Words-line p {
+    font-family: 'Raleway', sans-serif;
+    height: 70px;
+    line-height: 20px;
+    padding: 0 0px;
+    transition: all 0.9s ease-in-out;
+    vertical-align: top;
+    white-space: nowrap;
+    animation: mov linear 4s infinite;
+  }
+  @keyframes mov{
+      0%{
+        transform: translateY(0px);
+      }
+      50%{
+        transform: translateY(100px);
+      }
+      75%{
+        transform: translateY(100px);
+      }
+  }
+.social{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+    margin-top:50px;
+    margin-left:100px;
+}
+.social-media a{
+    font-size: 3rem;
+    color: white;
+}
+.social-media a:hover{
+    color: #cb9560;
+    margin-left: -5px;
+    transition: 0.5s;
+
+}
+form{
+    width: 500px;
+    margin-right: 200px;
+}
+.form > .form-group{
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 20px;
+   
+}
+.form input{
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 0.5rem 1.9rem;
+    border: none;
+    width: 500px;
+    border-bottom: 2px solid white;
+    display: block;
+    transition: all 0.3s;
+    background-color: transparent;
+}
+.form input:focus, .form textarea:focus{
+    outline: none;
+    border-bottom: 2px solid rgb(203, 149,96);
+    color:white;
+}
+.form textarea{
+    margin-top:10px;
+    width: 500px;
+    height: 250px;
+    border: 2px solid white;
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: color;
+    padding: 2rem;
+    transition: all 0.3s;
+    background-color: transparent;
+}
+.form textarea:focus{
+    outline: none;
+    border: 2px solid rgb(203, 149,96);
+    color:white;
+}
+
+.form  input ::-webkit-input-placeholder, .form  textarea ::-webkit-input-placeholder {
+    color:white;
+}
+
+.form  input:focus::-webkit-input-placeholder, .form  textarea:focus::-webkit-input-placeholder {
+    color:white;
+}
+
+.form label{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    display: block;
+    transition: all 0.3s;
+    color: rgb(203, 149,96);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.form input:focus + label, .form textarea:focus + label{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0.1rem);
+}
+.buton{
+    background-color: rgb(203, 149,96);
+    color: black;
+    margin-top: 10px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 10px 25px;
+    border: 1px solid rgb(203, 149,96);
+    outline: none;
+    transition: 0.3s;
+    text-align: center;
+}
+.buton:active{
+    color:white;
+}
+.cent-btn-wrapper{
+    display: flex;
+    justify-content: left;
+    margin-left:20px;
+}

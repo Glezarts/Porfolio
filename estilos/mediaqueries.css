@@ -1,0 +1,144 @@
+@media (max-width:667px){
+  #particles-js{
+    display: none;
+  }
+  .container-nav{
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .container-nav img{
+    margin: 20px auto;
+    width: 100%;
+  }
+  .navbar{
+    margin:10px 0px 20px 0px;
+
+  }
+  .navbar .item {
+    font-size: 1em;
+    margin-right: 30px;
+    
+  }
+  .inicio{
+    margin: 0px auto;
+    flex-direction: column;
+  }
+  .inicio img {
+    width: 300px;
+    margin:0;
+  }
+  .content-page-about{
+    margin-top: 670px;
+
+  }
+  .title-cab{
+    width:250px;
+    margin-top:20px;
+    text-align: left;
+  }
+  .title-cab h1 {
+    font-size: 2em;
+  }
+  .title-cab h2 {
+    font-size: 1.3em;
+  }
+  .boton{
+    flex-direction: column;
+    margin: 10px 20px;
+  }
+  .boton .btn {
+    justify-content: left;
+    margin-top:30px;
+    font-size: 0.6em;
+    margin-left: -20px;
+  }
+  .content-page-about{
+    flex-direction: column;
+   
+  }
+  .title-about{
+    padding-top: 20px;
+    width: 350px;
+  }
+  .content-page-about h3{
+    margin: 20px 0px;
+    font-size: 1.3em;
+  }
+
+  .content-page-about img{
+    margin-top:40px;
+    max-width: 100%;
+}
+  .content-page-about .escribe{
+    font-size: 1em;
+  }
+
+  .content-page-works {
+    grid-template-columns: 1fr;
+  }
+  .content-page-works .category{
+    font-size: 0.5em;
+  }
+  .contact-{
+    display: block;
+    margin: 0px auto;
+
+  }
+  .contact- h1{
+    text-align: left;
+    margin: 0px auto;
+    font-size: 2em;
+  }
+  .contact- .social-media{
+    flex-direction: row;
+    margin: 30px auto;
+  }
+  .contact- .social-media a{
+    font-size: 2em;
+
+  }
+  .contact- .social-media a{
+    margin-left:10px;
+    margin-right: 10px;
+  }
+  form{
+    max-width: 200px;
+    margin: 0px 55px;
+   
+  }
+  .buton{
+    font-size: 1em;
+  }
+  .form input{
+    width: 250px;
+    font-size: 1em;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+  .form textarea{
+    width: 250px;
+    height: 200px;
+    font-size: 1em;
+    padding-top: 10px;
+    padding-left: 10px;
+
+  }
+  .cent-btn-wrapper .buton{
+    font-size: 1em;
+    
+  }
+
+  .pie-pagina{
+    flex-direction: column;
+  }
+  .pie-pagina .socialmedia{
+    flex-direction: row;
+
+  }
+  .pie-pagina .socialmedia a{
+    margin: 20px 10px;
+  }
+
+}

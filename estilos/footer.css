@@ -1,0 +1,53 @@
+.pie-pagina .logo-pie img{
+    width:200px;
+    filter: opacity(50%);
+    margin-bottom: 20px;
+    
+}
+.pie-pagina{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin:0 80px;
+
+}
+.pie-pagina .links{
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    width: 300px;
+}
+.pie-pagina .links a{
+    color:black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.pie-pagina > .links a:hover{
+    color:rgb(203, 149,96);
+    letter-spacing: 2px; 
+}
+
+.pie-pagina .socialmedia{
+    display: flex;
+    flex-direction: column;
+
+}
+.pie-pagina .socialmedia a{
+    color:black;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    transition: 0.5s;
+    text-align: center;
+}
+.pie-pagina .socialmedia a:hover{
+    -ms-transform: scale(1.5); 
+    transform: scale(1.5); 
+    color:rgb(203, 149,96);
+}
+.derechos{
+    font-size: 0.8em;
+}
