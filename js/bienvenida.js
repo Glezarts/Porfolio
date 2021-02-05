@@ -19,7 +19,17 @@ bienvenida.addEventListener("click", (e)=>{
     }
 })
 
+var started = false;
 
+window.addEventListener("click", (e) => {
+    if (!started && !bienvenida.contains(e.target)) {
+        startpage.style.height = "0";
+        page.style.display ="block";
+        bienvenida.style.display="none";
+        pageprojects.style.display = "none";
+        started = true;
+    }
+})
 
 
 project.addEventListener("click", (e)=>{
@@ -54,12 +64,4 @@ botoncontact.addEventListener("click", (e)=>{
         startpage.style.display = "none";
 
     } 
-})
-window.addEventListener("click", (e) => {
-    if (!bienvenida.contains(e.target)) {
-        startpage.style.height = "0";
-        page.style.display ="block";
-        bienvenida.style.display="none";
-    
-    }
 })
