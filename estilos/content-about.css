@@ -30,7 +30,7 @@
 .content-page-about .about-img img{
     width: 700px;
 }
-.content-page-about .escribe{
+.btn .escribe{
         margin-right: 30px;
         font-family: 'Raleway', sans-serif;
         text-decoration: none;
@@ -44,8 +44,18 @@
         -moz-transition: all ease 0.8s;
         transition: all ease 0.8s;
     }
-    .content-page-about .escribe:hover {
+.btn:hover a{
         box-shadow: inset 340px 0 0 0 black;
         color: white;
     }
     
+
+.section1{
+    display:block
+}
+#slider2{
+    width: 700px;
+    height: 700px;
+    overflow: hidden;
+    margin: auto;
+}

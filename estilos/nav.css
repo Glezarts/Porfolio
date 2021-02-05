@@ -10,13 +10,12 @@
   
 }
 .navbar{
-    align-items: flex-end;
     flex-direction: row;
-    margin-right: 60px;
+    margin-left:350px;
 }
 .navbar a{
-    font-size: 2em;
-    margin-right: 50px;
+    font-size: 1.5em;
+    margin-right: 25px;
     color:black;
     text-decoration: none;
     text-align: center;
@@ -56,4 +55,76 @@
 }
 .tres:hover:before {
     left:0;
+}
+
+
+/*BOTON IDIOMA*/
+.boton-idioma{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.boton-idioma p{
+    padding:5px 10px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    opacity: 1;
+
+}
+
+
+.switch input { 
+width: 0;
+height: 0;
+background-color:  black;
+
+}
+
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: black;
+-webkit-transition: .4s;
+transition: .4s;
+border-radius: 40px;
+
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 16px;
+width: 16px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+border-radius: 40px;
+
+}
+
+input:checked + .slider {
+    background-color:  #cb9560;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #ccc;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
 }

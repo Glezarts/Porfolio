@@ -1,0 +1,44 @@
+*{
+    font-family: 'Playfair Display', serif;
+
+}
+.bienvenida{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color:  #cb9560;
+    z-index: 2;
+    transition: 0.5s;
+}
+.bienvenida h2{
+    text-align: center;
+    font-size: 5em;
+    color:white;
+    font-weight: 100;
+    padding-top: 100px;
+    
+}
+.gotopage{
+    margin:200px auto 0px auto;
+    text-decoration: none;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    font-size: 5em;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+
+.gotopage i{
+
+    animation: arrow 1s infinite linear;
+}
+
+@keyframes arrow{
+    0%  {margin-top: 0px}
+    50% {margin-top: 50px}
+    100%{margin-top: 0px}
+}

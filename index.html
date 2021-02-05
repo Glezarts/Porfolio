@@ -4,30 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="estilos/estilos.css">
-    <link rel="stylesheet" href="estilos/content-about.css">
-    <link rel="stylesheet" href="estilos/nav.css">
-    <link rel="stylesheet" href="estilos/content-category.css">
-    <link rel="stylesheet" href="estilos/contact.css">
-    <link rel="stylesheet" href="estilos/footer.css">
-    <link rel="stylesheet" href="estilos/mediaqueries.css">
+    <link rel="stylesheet" href="./estilos/estilos.css">
+    <link rel="stylesheet" href="./estilos/bienvenida.css">
+    <link rel="stylesheet" href="./estilos/content-about.css">
+    <link rel="stylesheet" href="./estilos/nav.css">
+    <link rel="stylesheet" href="./estilos/content-category.css">
+    <link rel="stylesheet" href="estilos/work.css">
+    <link rel="stylesheet" href="./estilos/contact.css">
+    <link rel="stylesheet" href="./estilos/footer.css">
+    <link rel="stylesheet" href="./estilos/mediaqueries.css">
+    <link rel="stylesheet" href="estilos/mediaqueries-work.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="http://code.jquery.com/jquery-latest.js"></script> 
     <script src="js/arriba.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Porfolio Glezart</title>
 </head>
 <body>
+
+    <div class="bienvenida">
+        <h2 class="animate__animated animate__fadeInUp">Hola! Hi!</h2>
+        <h2 class="animate__animated animate__fadeInUp">Bienvenidos a mi portfolio</h2>
+        <a href="" class="animate__animated animate__fadeInUp gotopage"><i class="fas fa-chevron-down"></i></a>
+    </div>
+
+<div class="todo">  
+    <!--<div id="particles-js"></div>-->
+ 
     <span class="ir-arriba"><i class="fas fa-angle-up"></i></span>
-    <div id="particles-js"></div>
 <div class="contenedor">
     <div class="container-nav">
         <img src="img/logonegro.png" alt="">
         <div class="navbar">
-            <a class="item tres" href="#about">Sobre mi</a>
-            <a class="item tres" href="work.html">Proyectos</a>
-            <a class="item tres" href="#contact">Contacto</a>
-            
- 
+            <a class="item tres change-homepage" href="index.html#about" id="enlace1">Sobre mi</a>
+            <a class="item tres change-projects" href="" id="enlace2">Proyectos</a>
+            <a class="item tres change-homepage" href="index.html#contact" id="enlace3">Contacto</a>
+            </div>
+            <div class="boton-idioma">
+                <p>ESP</p>
+                <label class="switch idioma">
+                    <input type="checkbox" id="lang">
+                    <span class="slider round"></span>
+                </label>
+                <p>EN</p>
         </div>
     </div>
     <div class="inicio">
@@ -35,10 +54,10 @@
 
         <div class="title-cab">
             <h1>Eva González</h1>
-            <h2>Diseñadora gráfica y web</h2>
+            <h2 id ="profesion">Diseñadora gráfica y web</h2>
             <div class="boton">
-                <div class="btn from-left"><a href="work.html">Mirar mis trabajos</a></div>
-                <div class="btn from-left"><a href="#contact">Contáctame</a></div>
+                <div class="btn from-left"><a href="" class="change-projects" id="botonprojects">Mirar mis trabajos</a></div>
+                <div class="btn from-left"><a href="#contact" id="botoncontact">Contáctame</a></div>
             </div>
         </div>
     </div>
@@ -46,26 +65,121 @@
 </div>
 <a name="about"></a>
     <div class="content-page-about">      
-    <div class="title-about">
-        <h2>Hola,</h2>
-        <p>
-            Mi nombre es Eva, pseudónimo 'Glezart', tengo 26 años. 
-            Mis estudios específicos comienzan con el Grado de Bellas Artes, en la Universidad de Vigo.
-            Continúa con el Ciclo superior de Gráfica publicitaria, en Escola Llotja - Barcelona. 
-            Actualmente estoy realizando un curso enfocado a programación web gracias al programa Singulars 2020 de Pimec en Bit Computer Training by Netmind.
-        </p>
-        <p>
-            Me declaro amante del arte, en todas sus ramas. Mis expectativas profesionales se enfocan a 
-            ser Diseñadora Web y de, más específicamente enfocado a front-end y a UI-UX. 
-        </p>
-        <p> 
-            Entre uno de mis muchos hobbies, el más destacado, se encuentra mi aficción por el maquillaje y la fotografía enfocada a ello y la pintura. 
-        </p>
-        <p>Soy persona de café en mano y charlar de la vida, proyectos, lo que sea en general... De ahí sale la mejor inspiración. </p> 
-        <p>Que dices, ¿Nos hacemos un café? </p>
-        <h3>Más información</h3>
+        <div id="slider2">
+            <div id="slider2content">
+                <div class="slideImg section1">
+                    <h2>Hola,</h2>
+                    <p>
+                        Mi nombre es Eva, pseudónimo 'Glezart', tengo 26 años.
+                        Mis estudios específicos comienzan con el Grado de Bellas Artes, en la Universidad de Vigo.
+                        Continúa con el Ciclo superior de Gráfica publicitaria, en Escola Llotja - Barcelona.
+                        Actualmente estoy realizando un curso enfocado a programación web gracias al programa Singulars 2020 de Pimec en Bit Computer Training by Netmind.
+                    </p>
+                    <p>
+                        Me declaro amante del arte, en todas sus ramas. Mis expectativas profesionales se enfocan a
+                        ser Diseñadora Web y de, más específicamente enfocado a front-end y a UI-UX.
+                    </p>
+                    <p>
+                        Entre uno de mis muchos hobbies, el más destacado, se encuentra mi aficción por el maquillaje y la fotografía enfocada a ello y la pintura.
+                    </p>
+                    <p>Soy persona de café en mano y charlar de la vida, proyectos, lo que sea en general... De ahí sale la mejor inspiración. </p>
+                    <p>Que dices, ¿Nos hacemos un café? </p>
+                    <h3>Más información</h3>
+                </div>
+                <div class="slideImg">
+                    <h2>Skills</h2>
+                    
+                    <div class="skill-wrp">
+                        <div class="skill">
+                        <p> HTML</p>
+                        <p> CSS</p>
+                        <p> JavaScript</p>
+                        <p> SASS</p>
+                        <p> Python</p>
+                        <p> Flutter</p>
+                        <p> Adobe Photoshop</p>
+                        <p> Adobe Illustrator</p>
+                        <p> Adobe Premiere</p>
+                        <p> Adobe Indesign</p>
+                        <p> Adobe After Effects</p>
+                        <p> Social Media</p>
+                        <p> Adobe XD</p>
+                        <p> Figma</p>
+                    </div>
+                    <div class="barras">
+                        <div class="barra- barra1"></div>
+                        <div class="barra- barra2"></div>
+                        
+                        <div class="barra- barra3"></div>
+                        
+                        <div class="barra- barra4"></div>
+                        
+                        <div class="barra- barra5"></div>
+                        
+                        <div class="barra- barra6"></div>
+                        
+                        <div class="barra- barra7"></div>
+                        
+                        <div class="barra- barra8"></div>
+                        
+                        <div class="barra- barra9"></div>
+                        
+                        <div class="barra- barra10"></div>
+                        
+                        <div class="barra- barra11"></div>
+                        
+                        <div class="barra- barra12"></div>
+                        
+                        <div class="barra- barra13"></div>
+                        
+                        <div class="barra- barra14"></div>
+                        
+                    </div>
+                </div>
+                </div>
+                <div class="slideImg">
+                    <h2>Formación</h2>
+                    <h4>Front-end (actualmente en curso)</h4>
+                    <p>Bit Computer Training Academy by Netmind (Singulars 2020)</p>
+                    <p><i>HTML, CSS, SASS, JavaScript, Vue.js</i></p>
+                    <h4>Ciclo Superior Gráfica Publicitaria</h4>
+                    <p>Escola Llotja</p>
+                    <p><i>Pack Adobe, logotipos, branding, carteles, manual corporativo...</i></p>
+                    <h4>Grado universitario Bellas Artes</h4>
+                    <p>Universidad de Vigo</p>
+                    <p><i>Pintura, escultura, comisariado, video, fotografía, grabado, diseño gráfico</i></p>
+                    
+                </div>
+                <div class="slideImg">
+                    <h2>Experiencia laboral</h2>
+                    <h4>Prácticas Product Maker</h4>
+                    <p>Alta Guardia (FEB 2021 - Actualmente)</p>
+                    <p>Diseño de App para móvil con Flutter (Andoid e iOs)</p>
+                    <h4>Diseñadora Web y Comunity Manager</h4>
+                    <p>Freelance (JUL - SEP 2020)</p>
+                    <p>Diseño web con Wordpress, codigo HTML y CSS, Social Media, SEM</p>
+                    <h4>Auxiliar Administrativa</h4>
+                    <p>Isolana, Hospitalet de Llobregat (FEB - MAR 2020)</p>
+                    <p>Digitalización de documentos, organización de facturas, albaranes, apoyo al departamento de RRHH organización de archivo</p>
+                    <h4>Prácticas RSC Comunicación</h4>
+                    <p>Caja de Ingenieros (JUN 2019 - FEB 2020)</p>
+                    <p>Gestión y contenido de redes sociales, gestión de facturas, presentaciones en Powerpoint, creación de logo, comunicación interna, creación de banners para intranet, digitalización de documentos, gestión de blogs (wordpress), elaboración de cartas, diseño de carteles.</p>
+                    <h4>Diseñadora Gráfica Junior</h4>
+                    <p>Refruiting (ENE - MAY 2019)</p>
+                    <p>Creación de creatividades para redes sociales (motion graphics, fotografías,ilustraciones digitales), realización y edición de fotografías para campaña publicitaria, diseño de material online: banners, newsletters, optimización de imagen para web, diseño de material offline: cartas, tarjetas de visita, carteles ...</p>    
+                </div>
+               
+                <div class="buttons2">
+                    <button id="prev2"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next2"><i class="fas fa-chevron-right"></i></button>
+                    
+                </div>   
+               
+            </div>
+          
+        </div>
             
-        <a class="escribe" href="#contact">Escríbeme </a>
+        <div class="btn from-left"><a class="escribe" href="#contact" id="botonescribeme">Escríbeme </a></div>
     </div> 
     <div class="about-img">
         <img src="img/IMG_1242.JPG" alt="">
@@ -73,20 +187,20 @@
 </div>
 <div class="content-page-works">
     <div class="category">
-        <a href="work.html#logos">LOGOS</a>
+        <a href="#logos">LOGOS</a>
     </div>
     <div class="category">
-        <a href="work.html#webdesign">WEB DESIGN</a>
+        <a href="#webdesign">WEB DESIGN</a>
     </div>
     <div class="category">
-        <a href="work.html#branding">BRANDING</a>
+        <a href="#branding">BRANDING</a>
     </div>
 
 </div>
 <a name="contact"></a>
 <div class="contact-">
     <div class="social">
-        <h1>CONTACTO</h1>
+        <h1 id="contacto">CONTACTO</h1>
         <div class="social-media">
             <a href="https://www.linkedin.com/in/eva-gonzalez-894b31157/"><i class="fab fa-linkedin"></i></a>
             <a href="https://www.behance.net/glezart"><i class="fab fa-behance-square"></i></a>
@@ -118,13 +232,13 @@
     </div>
         <div class="links">
             <div class="nav-link">
-                    <a href="index.html#about">SOBRE MI</a>
+                    <a href="index.html#about" id="enlace1pie">SOBRE MI</a>
             </div>
             <div class="nav-link">
-                    <a href="work.html">TRABAJOS</a>
+                    <a href="#" class="change-projects" id="enlace2pie">TRABAJOS</a>
             </div>
             <div class="nav-link">
-                    <a href="index.html#contact">CONTACTO</a>
+                    <a href="index.html#contact" id="enlace3pie">CONTACTO</a>
             </div>
 
         </div>
@@ -143,20 +257,156 @@
                 </a>
 
         </div>
-        <div class="derechos">
-            &copy; 2020 Glezart &#124; Todos los derechos reservados</p>
+        <div class="derechos" id="derechos">
+            <p>&copy; 2020 Glezart &#124; Todos los derechos reservados</p>
         </div>     
 </div>
 
 </div>
+</div> 
+
+<!--PAGINA PROYECTOS-->
+<div id="project-page">
+
+    <span class="ir-arriba"><i class="fas fa-angle-up"></i></span>
+    <div class="container-nav">
+        <img src="img/logonegro.png" alt="">
+        <div class="navbar">
+            <a class="item tres change-about" href="#about" id="enlace1"> Sobre mi</a>
+            <a class="item tres change-projects" href="" id="enlace2">Proyectos</a>
+            <a class="item tres change-contact" href="#contact" id="enlace3"> Contacto</a>
+        </div>
+        <div class="boton-idioma">
+            <p>ESP</p>
+            <label class="switch idioma">
+                <input type="checkbox" id="lang">
+                <span class="slider round"></span>
+            </label>
+            <p>EN</p>
+    </div>
+    </div>
+    
+        <div class="indice">
+            <a href="#logos">LOGOS</a>
+            <a href="#webdesign">WEB DESIGN</a>
+            <a href="#branding">BRANDING</a>
+    
+        </div>
+   
+    <div class="contenido">
+        <a name="logos"></a>
+        <div class="titulo-categoria">
+            <div class="linea"></div>
+            <div class="title">LOGOS</div>
+        </div>
+        <div class="imagenes">
+        <img class="img1" src="img/DjVaro_negro.png" alt="">
+        <img class="img1"src="img/veronica.png" alt="">
+        <img class="img1" src="img/friends.jpg" alt="">
+    </div>
+    </div>
+    <div class="contenido">
+        <a name="webdesign"></a>
+        <div class="titulo-categoria">
+            <div class="linea"></div>
+            <div class="title">WEB DESIGN</div>
+        </div>
+        <div class="webs">
+            <div class="web-wrp">
+                <div class="text-web">
+                    <h2>Bravas</h2>
+                    <p class="info"> Esta es mi primera web completa con lenguaje HTML y CSS.
+                    Es un prototipo de página web para un restaurante/bar de tapas situado en Barcelona.
+                    El logotipo, ya que está destinado a un público, la mayoría joven, utilice una tipografía con cantos curvados e inspirado en la geometría.
+                    </p>
+                </div>
+            <img class="img4" src="img/3.jpg" alt="">
+            </div>
+            <div class="web-wrp">
+                <div class="text-web">
+                    <h2>Swetties</h2>
+                    <p class="info">
+                    Swetties, sería la idea de un ecommerce de ropa interior/lencería. El prototipo en este caso esta realizado con Adobe XD. Un diseño sencillo, claro y actual a lo que en estos momentos estamos acostumbrados a ver.
+                    </p>
+                </div>
+            <img class="img4" src="img/4.jpg"  alt="">
+            </div>
+            <div class="web-wrp">
+                <div class="text-web">
+                    <h2>Bitácora Rest&Club</h2>
+                    <p class="info">
+                    Aquí os presento un prototipo de landing-home, realizada con lenguaje HTML y CSS, utilizando algunas librerías para la interactuación eficaz del usuario. 
+                    </p>
+                </div>
+            <img class="img4 gif" src="img/bitacora.gif"  alt="">
+            </div>
+         
+    </div>
+    <div class="contenido">
+        <a name="branding"></a>
+        <div class="titulo-categoria">
+            <div class="linea"></div>
+            <div class="title">BRANDING</div>
+        </div>
+        
+        <div class="branding">
+            <img class="img4" src="img/Presentación Behance_Mesa de trabajo 1.jpg" alt="">
+            <img class="img4" src="img/Presentación Behance-02.jpg" alt="">
+            <img class="img4" src="img/Presentación Behance-03.jpg" alt="">
+            <img class="img4" src="img/Presentación Behance-04.jpg" alt="">
+            <img class="img4" src="img/Presentación Behance-05.jpg" alt="">
+            <img class="img4" src="img/Presentación Behance-06.jpg" alt="">
+            <img class="img4" src="img/Presentación Behance-07.jpg" alt="">
+            <img class="img4" src="img/Presentación Behance-08.jpg" alt="">
+    
+        </div>
+    </div>
+    <div class="pie-pagina">
+        <div class="logo-pie">
+            <img src="img/logonegro.png" alt="Logo glezart">
+        </div>
+            <div class="links">
+                <div class="nav-link">
+                        <a href="" class ="change-about" id="enlace1pie">SOBRE MI</a>
+                </div>
+                <div class="nav-link">
+                        <a href="" class= "change-projects" id="enlace2pie">TRABAJOS</a>
+                </div>
+                <div class="nav-link">
+                        <a href="" class ="change-contact" id="enlace3pie">CONTACTO</a>
+                </div>
+        
+            </div>
+            <div class="socialmedia">
+                    <a href="www.instagram.com">
+                        <i class="fab fa-instagram"></i>  
+                    </a>
+                    <a href="https://www.behance.net/glezart">
+                        <i class="fab fa-behance-square"></i>
+                    </a>
+                    <a href="www.facebook.com">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://github.com/Glezarts">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+            </div>
+            <div class="derechos"  id="derechos">
+                <p>&copy; 2020 Glezart &#124; Todos los derechos reservados</p>
+            </div>     
+    </div>
+    
+    </div>
+</div>
+<script src="./js/bienvenida.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="js/app.js"></script>
     <script>
         function myFunction(x) {
           x.classList.toggle("change");
-        
         }
         </script>
-        
+    <script src="./js/text-changeleng.js"></script>
 </body>
 </html>
