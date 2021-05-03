@@ -2,6 +2,26 @@
   #particles-js{
     display: none;
   }
+  .boton-idioma{
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    margin-right: 10px;
+  }
+  .switch {
+    transform: rotate(90deg);
+    width: 35px;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+    }
+  .boton-idioma p{
+    padding: 10px;
+    font-size: 10px;
+  }
   .container-nav{
     align-items: center;
     flex-direction: column;
@@ -30,7 +50,7 @@
     margin:0;
   }
   .content-page-about{
-    margin-top: 670px;
+    margin-top: 100px;
 
   }
   .title-cab{
@@ -48,31 +68,97 @@
     flex-direction: column;
     margin: 10px 20px;
   }
-  .boton .btn {
+  .boton .btn2 {
     justify-content: left;
     margin-top:30px;
     font-size: 0.6em;
     margin-left: -20px;
   }
   .content-page-about{
-    flex-direction: column;
+    flex-wrap: wrap;
    
   }
   .title-about{
     padding-top: 20px;
+    width: 390px;
+    padding-left: 0px;
+  }
+  .slideImg{
+    width: 550px;
+    height: 500px;
+    margin-right: 200px;
+  }
+  .presentacion{
+    margin-left: 0px;
+    padding: 0px;
+  }
+  .presentacion p{
     width: 350px;
+    font-size: 12px;
+  }
+  .skill-wrp{
+    width: 400px;
+  }
+  .skill p{
+    font-size: 12px;
+  }
+  .barra-{
+    width: 200px;
+    height: 10px;
+    margin: 12.2px;
+    background-color: #cb9560;
+
+}
+
+.barra11{
+    width: 100px;
+    background-color: #cb9560;
+
+}
+.barra12{
+    width: 100px;
+}
+
+.barra13{
+    width:50px;
+}
+.barra14{
+    width: 20px;
+}
+  .barra-{
+
+  }
+  .formacion p{
+    width: 350px;
+    font-size: 12px;
+  }
+  .experiencia >.empresa-exp{
+    font-size: 12px;
+
+  }
+  .slideImg h2{
+    font-size: 35px;
+  }
+  .experiencia > p{
+    width: 350px;
+    font-size: 12px;
+    margin: 0px;
+
+  }
+  .content-page-about h4{
+    margin: 10px 0px;
+    font-size: 1.1em;
   }
   .content-page-about h3{
     margin: 20px 0px;
-    font-size: 1.3em;
+    font-size: 1em;
   }
 
   .content-page-about img{
-    margin-top:40px;
-    max-width: 100%;
+    max-width: 70%;
 }
   .content-page-about .escribe{
-    font-size: 1em;
+    font-size: 2em;
   }
 
   .content-page-works {

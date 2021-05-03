@@ -5,12 +5,15 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 100px;
-    padding-bottom: 300px;
+    padding-bottom: 200px;
 }
 .title-about{
-    max-width: 800px;
-    margin:0px 100px;
+    overflow: hidden;
+    max-width: 1300px;
+    margin:30px 50px;
+    padding-left: 50px;
 }
+
 .content-page-about h2{
     font-size: 3em;
     margin-bottom: 20px;
@@ -24,29 +27,162 @@
 }
 .content-page-about h3{
     font-size: 1.8em;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
 .content-page-about .about-img img{
-    width: 700px;
+    width: 655px;
+    margin-top: -5px;
+    margin-left: 80px;
 }
-.btn .escribe{
-        margin-right: 30px;
-        font-family: 'Raleway', sans-serif;
-        text-decoration: none;
+
+.divbtn{
+    padding:10px 20px;
+}
+.btn{
+        width: 190px;
         background-color: #cb9560;
-        padding: 10px 20px;
         color:white;
         font-size: 1.5vw;
         cursor: pointer;
-        box-shadow: inset 0 0 0 0 black;
-        -webkit-transition: all ease 0.8s;
-        -moz-transition: all ease 0.8s;
+        text-align: center;
+        transition: 0.5s;ç
+        box-shadow: inset 0 0 0 0 white;
         transition: all ease 0.8s;
     }
-.btn:hover a{
-        box-shadow: inset 340px 0 0 0 black;
+.escribe{
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+
+}
+.btn:hover{
         color: white;
+        background-color: black;
+        box-shadow: inset 150px 0 0 0 black;
+
+    }
+
+#slider2content{
+        width: 1500px;
+        transition: 1s;
+        display: flex;
+    }
+    button{
+        width: 100px;
+    }
+    .slideImg{
+        width: 700px;
+        height: 550px;
     }
     
+    
+    button{
+        border: none;
+        width:50px;
+        background-color: transparent;
+    }
+    .buttons2 i{
+        font-size: 2em;
+        color: white;
 
+    }
+    
+    h4{
+        margin:0;
+        padding: 0px 0px;
+        color: white;
+    }
+    .slideImg{
+        margin-bottom: 20px;
+    }
+   .presentacion > p{
+       width: 600px;
+        padding: 0px;
+        color: white;
+        font-size: 15px;
+
+    }
+    .slideImg h2{
+        font-size: 40px;
+        padding: 20px 0px;
+        color:white;
+    }
+    .skill-wrp{
+        width: 600px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .skill p{
+        margin:8px 0px;
+    }
+    .barra-{
+        width: 300px;
+        margin: 14px 0px;
+        height: 13px;
+        background-color: #cb9560;
+
+    }
+    
+    .barra11{
+        width: 160px;
+        background-color: #cb9560;
+
+    }
+    .barra12{
+        width: 180px;
+    }
+
+    .barra13{
+        width:50px;
+    }
+    .barra14{
+        width: 20px;
+    }
+    
+    .buttons2{
+        display: flex;
+        justify-content: space-between;
+        margin: -50px 30px 0px 0px;
+       
+    }
+    span{
+        padding: 10px;
+        transition: 0.5s;
+    }
+
+    span:hover {
+        background-color: #cb9560;
+        padding: 10px;
+    }
+    .slideImg .experiencia{
+        width: 600px;
+        font-size: 15px;
+    }
+    .experiencia h4{
+        margin-top: 25px;
+    }
+    .experiencia > p{
+        width: 650px;
+        margin:0px 0px 5px 0px;
+        font-weight: 200;
+        font-size: 20px;
+    }
+    .experiencia >.empresa-exp{
+        font-weight: 400;
+        color:#cb9560;
+        font-size: 15px;
+        margin-top: 0px;
+    }
+
+    .formacion h4{
+        margin-top: 40px;
+    }
+    .formacion p{
+        margin:0;
+    }
+
+.lugar-formacion{
+    color:#cb9560;
+    font-weight: 500;
+}

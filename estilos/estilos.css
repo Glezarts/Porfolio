@@ -62,7 +62,7 @@ html{
     display: flex;
 }
 
-.boton .btn a{
+.boton .btn2 a{
     margin-right: 30px;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
@@ -76,7 +76,7 @@ html{
     -moz-transition: all ease 0.8s;
     transition: all ease 0.8s;
 }
-.boton .btn a:hover {
+.boton .btn2 a:hover {
     box-shadow: inset 340px 0 0 0 white;
     color: black;
 }

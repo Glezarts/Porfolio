@@ -149,6 +149,8 @@ form{
     outline: none;
     transition: 0.3s;
     text-align: center;
+    width: 120px;
+
 }
 .buton:active{
     color:white;
